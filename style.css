@@ -143,18 +143,28 @@ footer {
   nav {
     width: 100%;
     position: static;
+    padding: 0;
   }
   nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
   }
   nav ul li {
-    width: 100%;
+    display: inline-block;
+    width: auto;
+    margin: 0 10px;
     text-align: center;
   }
   #contenido-principal, #hero, .seccion {
     margin-left: 0;
     width: 100%;
+  }
+  /* Haz que las imágenes sean responsivas */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 }
